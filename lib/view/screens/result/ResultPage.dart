@@ -37,7 +37,7 @@ class ResultPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 400),
+                    padding: const EdgeInsets.only(bottom: 500),
                     child: CircularPercentIndicator(
                       animation: true,
                       // animationDuration: 1000,

@@ -95,12 +95,14 @@ class _QuizScreenState extends State<QuizScreen> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    AppText(
-                                      text: value.optionlist[index].ans ?? '',
-                                      color:value.optionlist[index].selected==true?kprimarycolor: ktextcolor,
-                                      size: 16,
-                                      weight: FontWeight.w500,
-                                      letterspace: 0.5,
+                                    Expanded(
+                                      child: AppText(
+                                        text: value.optionlist[index].ans ?? '',
+                                        color:value.optionlist[index].selected==true?kprimarycolor: ktextcolor,
+                                        size: 16,
+                                        weight: FontWeight.w500,
+                                        letterspace: 0.5,
+                                      ),
                                     ),
                                     Checkbox(
                                       value: value.optionlist[index].selected,
